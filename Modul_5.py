@@ -99,6 +99,15 @@ def insertion_sort(daftar):
             daftar[pos]=daftar[pos-1]
             pos-=1
         daftar[pos]=nilai
+def reverse_sort(a):
+    mid=len(a)//2
+    i=0
+    while i<mid:
+        #print("swap "+str(a[i])+","+str(a[-i-1]))
+        j=a[i]
+        a[i]=a[-i-1]
+        a[-i-1]=j
+        i+=1
 
 from time import time as detak
 from random import shuffle as kocok
